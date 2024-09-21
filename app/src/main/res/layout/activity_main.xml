@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/txtTituloMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Trainer"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <!-- RadioGroup para seleccionar Cliente o Entrenador -->
+    <RadioGroup
+        android:id="@+id/radioGroupSeleccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cliente" />
+
+        <RadioButton
+            android:id="@+id/radioEntrenador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrenador" />
+    </RadioGroup>
+
+    <!-- Botones -->
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:paddingTop="16dp" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:paddingTop="16dp" />
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Espacio para agregar un nuevo cliente -->
+    <EditText
+        android:id="@+id/edtTelefonoCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de teléfono"
+        android:inputType="phone"/>
+
+    <Button
+        android:id="@+id/btnAgregarCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Cliente"
+        android:layout_below="@id/edtTelefonoCliente"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Lista de clientes -->
+    <ListView
+        android:id="@+id/lvClientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAgregarCliente"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

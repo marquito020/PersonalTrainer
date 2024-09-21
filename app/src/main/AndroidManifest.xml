@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PersonalTrainer"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".view.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PersonalTrainer">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Agrega LoginActivity -->
+        <activity
+            android:name=".view.LoginActivity"
+            android:exported="true" />
+
+        <!-- Agregar la actividad RegistroClienteActivity -->
+        <activity
+            android:name=".view.RegistroClienteActivity"
+            android:exported="true" />
+
+        <!-- Si también tienes RegistroEntrenadorActivity, agrégala -->
+        <activity
+            android:name=".view.RegistroEntrenadorActivity"
+            android:exported="true" />
+
+        <!-- Agregar ClientesEntrenadorActivity -->
+        <activity
+            android:name=".view.ClientesEntrenadorActivity"
+            android:exported="true" />
+
+        <!-- Agregar la nueva actividad AsignarRutinaActivity -->
+        <activity
+            android:name=".view.AsignarRutinaActivity"
+            android:exported="true" />
+
+        <!-- Agregar la nueva actividad EjerciciosPiernasActivity -->
+        <activity
+            android:name=".view.EjerciciosPiernasActivity"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

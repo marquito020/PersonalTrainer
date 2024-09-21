@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo para el Nombre del Cliente -->
+    <EditText
+        android:id="@+id/nombreCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del Cliente" />
+
+    <!-- Campo para el Peso del Cliente -->
+    <EditText
+        android:id="@+id/pesoCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso del Cliente"
+        android:inputType="numberDecimal" />
+
+    <!-- Campo para la Altura del Cliente -->
+    <EditText
+        android:id="@+id/alturaCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Altura del Cliente"
+        android:inputType="numberDecimal" />
+
+    <!-- Campo para el Teléfono del Cliente -->
+    <EditText
+        android:id="@+id/telefonoCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono del Cliente"
+        android:inputType="phone" />
+
+    <!-- Campo para el Usuario del Cliente -->
+    <EditText
+        android:id="@+id/usuarioCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario" />
+
+    <!-- Campo para la Contraseña del Cliente -->
+    <EditText
+        android:id="@+id/passwordCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <!-- Botón para Registrar Cliente -->
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar Cliente" />
+</LinearLayout>
